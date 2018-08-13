@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "前辈招聘",
+  "usingComponents": {
+    "people-recommend-card": "/components/people-recommend-card/people-recommend-card"
+  }
+}

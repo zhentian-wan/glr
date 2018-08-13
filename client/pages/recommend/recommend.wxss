@@ -1,0 +1,11 @@
+/* pages/recommend/recommend.wxss */
+page {
+  background: #f6f6f6;
+}
+
+.people__list {
+  margin-top: 25rpx;
+  display: flex;
+  flex-direction: column;
+}
+

@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- Search bar -->
+  <view class="home__search--container">
+    <image class="home__search--icon icon__search" src="/images/search-solid.svg"></image>
+    <input class="home__search--input" type='search' placeholder='搜索前辈' />
+    <image class="home__search--icon icon__record" src="/images/microphone-solid.svg"></image>
+  </view>
+
+  <scroll-view class="home__category--container" scroll-y>
+    <button wx:for="{{categories}}" wx:key="key">{{item.value}}</button>
+  </scroll-view>
+
+  <view class="people__list">
+    <block wx:for="{{people}}" wx:for-item="pitem" wx:key="id">
+        <people-info-card person="{{pitem}}"></people-info-card>
+    </block> 
+  </view>
+</view>

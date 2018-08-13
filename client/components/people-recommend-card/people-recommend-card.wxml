@@ -1,0 +1,26 @@
+    <view class="peoplecard__container" >
+      <view class="peoplecard__left">
+        <image class="peoplecard__image" mode="widthFix" src="{{person.image}}"></image>
+        <text class="peoplecard__info--name">{{person.name}}</text>
+      </view>
+      <view class="peoplecard__info--container">
+        <view class="peoplecard__info--line">
+          <text class="peoplecard__info--title">{{person.title}}</text>
+        </view>
+        <view class="peoplecard__info--line">
+          <textarea class="peoplecard__info--content">{{person.content_short}}</textarea>
+        </view>
+        <view class="peoplecard__info--line actions space-around">
+            <view class="action {{person.like ? 'like': ''}}">
+              <image wx:if="{{!person.like}}" class="action-icon" mode="widthFix" src="/images/heart-regular.svg"></image>
+              <image wx:else class="action-icon" mode="widthFix" src="/images/heart-solid.svg"></image>
+              <text>收藏</text>
+            </view>
+
+            <view class="action">
+              <image class="action-icon" mode="widthFix" src="/images/reply-solid.svg"></image>
+              <text>回复</text>
+            </view>
+        </view>
+      </view>
+    </view>

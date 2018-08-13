@@ -1,0 +1,85 @@
+<view class="expertDetail__container">
+
+  <view class="expertDetail__header">
+    <image class="expertDetail__header--image" src="{{expert.image}}" mode='widthFix'></image>
+    <text class="expertDetail__header--name">{{expert.name}}</text>
+    <view class="expertDetail__header--desc">{{expert.description}}</view>
+    <view class="expertDetail__header--categories">
+      <view class="expertDetail__header--category" wx:for="{{expert.categories}}" wx:key="index">
+        {{item}}
+      </view>
+    </view>
+    <view class="expertDetail__header--analysis">
+      <view class="expertDetail__analysis">
+        <view class="expertDetail__analysis--num">
+          {{analysis.customers}}
+        </view>
+        <view class="expertDetail__analysis--txt">
+          服务用户
+        </view>
+      </view>
+      <view class="expertDetail__analysis">
+        <view class="expertDetail__analysis--num">
+          {{analysis.rating}}
+        </view>
+        <view class="expertDetail__analysis--txt">
+          服务评分
+        </view>
+      </view>
+      <view class="expertDetail__analysis">
+        <view class="expertDetail__analysis--num">
+          {{analysis.recommended}}
+        </view>
+        <view class="expertDetail__analysis--txt">
+          用户推荐
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="expertDetail__tabs--container">
+    <view class="tab active">前辈经历</view>
+    <view class="tab">用户评价</view>
+    <view class="tab">公开回答</view>
+  </view>
+
+
+  <view class="expertDetail__section">
+    <view class="expertDetail__section--title">个人简介</view>
+    <view class="expertDetail__section--content">{{expert.description}}</view>
+  </view>
+
+  <view class="expertDetail__section">
+    <view class="expertDetail__section--title">擅长方向</view>
+    <view class="expertDetail__section--content">{{expert.description}}</view>
+  </view>
+
+  <view class="expertDetail__section">
+    <view class="expertDetail__section--title">求职经历</view>
+    <view class="expertDetail__section--content">{{expert.description}}</view>
+  </view>
+
+
+  <view class="expertDetail__section">
+    <view class="expertDetail__section--title">教育背景</view>
+    <view class="expertDetail__section--content">{{expert.description}}</view>
+  </view>
+
+
+  <view class="expertDetail__booking">
+    <view class="actions">
+      <view class="action">
+        <image class="action__image" src="/images/share-square-solid.svg"></image>
+        <text class="action__txt">分享</text>
+      </view>
+      <view class="action">
+        <image class="action__image" src="/images/heart-regular.svg"></image>
+        <text class="action__txt">收藏</text>
+      </view>
+    </view>
+    <view class="booking__btn">
+      请教 ￥{{expert.price}}
+    </view>
+  </view>
+</view>

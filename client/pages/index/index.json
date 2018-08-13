@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+      "people-info-card": "/components/people-info-card/people-info-card"
+    }
+}

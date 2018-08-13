@@ -1,0 +1,12 @@
+<!--pages/recommend/recommend.wxml-->
+<view class="recommend__container">
+  <scroll-view class="home__category--container" scroll-y>
+    <button wx:for="{{categories}}" wx:key="key">{{item.value}}</button>
+  </scroll-view>
+
+  <view class="people__list">
+    <block wx:for="{{people}}" wx:for-item="pitem" wx:key="id">
+      <people-recommend-card person="{{pitem}}"></people-recommend-card>
+    </block>
+  </view>
+</view>

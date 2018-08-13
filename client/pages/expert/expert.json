@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "前辈信息",
+  "usingComponents": {
+    "people-info-card": "/components/people-info-card/people-info-card"
+  }
+}

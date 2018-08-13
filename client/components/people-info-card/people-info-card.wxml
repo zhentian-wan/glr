@@ -1,0 +1,24 @@
+<view class="peoplecard__container" >
+  <view class="peoplecard__container--left">
+    <image class="peoplecard__image" mode="widthFix" src="{{person.image}}"></image>
+    <text class="peoplecard__info--name">{{person.name}}</text>
+  </view>
+  <view class="peoplecard__info--container">
+    <view class="peoplecard__info--line space-between">
+      <text class="peoplecard__info--title">{{person.company}}</text>
+      <text class="peoplecard__info--price">{{person.price}}</text>
+    </view>
+    <view class="peoplecard__info--line">
+      <view class="peoplecard__info--category" wx:for="{{person.categories}}" wx:key="index">{{item}}</view>
+    </view>
+    <view class="peoplecard__info--line">
+      <text class="peoplecard__info--content">{{person.experience_short}}</text>
+    </view>
+    <view class="peoplecard__info--line space-between actions">
+      <text>评分: {{person.rating}}</text>
+      <text>回答: {{person.answer_times}}</text>
+      <text>荐友: {{person.recommended_times}}</text>
+    </view>
+  </view>
+  <!--  -->
+</view>

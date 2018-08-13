@@ -1,0 +1,86 @@
+.peoplecard__container {
+  display: flex;
+  flex-direction: row;
+  font-size: 26rpx;
+  align-items: center;
+  background: white;
+  margin-top: 25rpx;
+  box-shadow: 2rpx 2rpx 2rpx #ccc;
+  height: 330rpx;
+  border-radius: 25rpx;
+  overflow: hidden;
+}
+
+.peoplecard__left {
+  display: flex;
+  flex-direction: column;
+  font-size: 20rpx;
+  text-align: center;
+  height: 330rpx;
+  justify-content: center;
+}
+
+.peoplecard__info--name {
+  font-weight: bold;
+  font-size: 25rpx;
+}
+
+.peoplecard__info--time {
+  opacity: 0.5;
+}
+
+.peoplecard__image {
+  height: 330rpx;
+  width: 200rpx;
+  border-radius: 100rpx;
+  flex-shrink: 0;
+}
+
+.peoplecard__info--container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 330rpx;
+  padding: 20rpx 20rpx 0rpx 20rpx;
+}
+
+.peoplecard__info--line {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4rpx;
+}
+
+.peoplecard__info--title {
+  font-size: 34rpx;
+  font-weight: bold;
+  flex: 1;
+}
+
+.peoplecard__info--content {
+  opacity: 0.5;
+  flex: 1;
+  width: 100%;
+  padding-top: 20rpx;
+}
+
+.actions {
+  border-top: 1rpx solid #ccc;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  opacity: 0.7;
+  height: 80rpx;
+}
+
+.like {
+  color: red;
+}
+
+.action-icon {
+  width: 28rpx;
+  padding-right: 25rpx;
+}
+
+.space-around {
+  justify-content: space-around;
+}
